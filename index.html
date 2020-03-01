@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza-Palace</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </head>
+
+
+
 <body>
-    
+    <!-- list tags for carousel-->
+    <div id="pizza" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+          <li data-target="#pizza" data-slide-to="0" class="active"></li>
+          <li data-target="#pizza" data-slide-to="1"></li>
+          <li data-target="#pizza" data-slide-to="2"></li>
+          <li data-target="#pizza" data-slide-to="3"></li>
+      </ul>
+      <!-- carousel- inner class-->
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="images/pizaa.jpg" alt="pizzapic" width="2200" height="600" auto>
+              <div class="carousel-caption">
+                  <h3>Yummy-bites</h3>
+                  <p>Best pizza we could get!</p>
+              </div>
+            </div>
+            <!--second image-->
+        <div class="carousel-item">
+            <img src="images/pizza3.jpg" alt="pizzapic3" width="2200" height="600" auto>
+            <div class="carousel-caption">
+                <h3>delicious food</h3>
+                <p> At affordable prices</p>
+            </div>
+      </div>
+       <!--third image -->
+       <div class="carousel-item">
+           <img src="images/pizza4.jpg" alt="pizzapic4" width="2200" height="600">
+           <div class="carousel-caption">
+               <h3>Pizza-Place </h3>
+               <p>For first delivery</p>
+           </div>
+       </div>
+        <!--fourth image on Carousel-->
+       <div class="carousel-item">
+        <img src="images/pizza5.jpg" alt="pizzapic4" width="2200" height="600">
+        <div class="carousel-caption">
+            <h3>Best pizza in town</h3>
+            <p>For first delivery</p>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#pizza" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#pizza" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+       
+    </div>
 </body>
+
 </html>
