@@ -19,7 +19,7 @@
 <body>
     <div class="top">
         <div class="logos">
-            <img src="images/pizza6.jpg" width="2200" height="600" >
+            <img src="images/pizza6.jpg" width="2200" height="600">
         </div>
         <h1>
             Pizza-Palace
@@ -29,136 +29,65 @@
         </div>
     </div>
     <div class="container">
-        <div class="row ">
-            <div class="col-md-12">
-                <form>
+        <div class="container">
+            <form name="form" id="form">
+                <p>
+                </p>
+                <h3>SIZE</h3>
+                <select class="form-control form-control-md" id="size">
+                    <option selected value="0">Select</option>
+                    <option value="Small">Small @Ksh450</option>
+                    <option value="Medium">Medium @Ksh650</option>
+                    <option value="Large">Large @Ksh1200</option>
+                </select>
+
+                <h3>CRUST</h3>
+                <select class="form-control form-control-lg-6" id="crust">
+                    <option selected value="0">Select</option>
+                    <option value="Crispy">Crispy @Ksh450</option>
+                    <option value="Stuffed">Stuffed @Ksh640</option>
+                    <option value="Gluten-free">Gluten-free @Ksh500</option>
+                </select>
+
+                <div class="col-6">
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Pizza Size</label>
-                        <select class="form-control size" id="size">
-                            <option selected></option>
-                            <option>Small</option>
-                            <option>Medium</option>
-                            <option>Large</option>
+                        <h3>TOPPINGS</h3>
+                        <select name="topping" class="form-control" id="toppings">
+                            <option value="0">Select</option>
+                            <option value="">sausage @Ksh500</option>
+                            <option value="pepperoni">Pepperoni @Ksh580</option>
+                            <option value="tomato">Tomato @Ksh570</option>
+                            <option value="mashroom">Mashroom @Ksh520</option>
+                            <option value="onion">Onion @Ksh500</option>
+                            <option value="bell-pepper">Bell-pepper @Ksh450</option>
+                            <option value="scallion">Scallion @Ksh500</option>
+                            <option value="cheese">Cheese @Ksh510</option>
+                            <option value="becon">Becon @Ksh300</option>
+                            <option value="Pastron">Pastron @Ksh550</option>
+                            <option value="berbecue-sauce">Berbecue sauce @Ksh400</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect2">Crust</label>
-                        <select class="form-control crust" id="crust">
-                            <option selected></option>
-                            <option>Stuffed Crust</option>
-                            <option>Thick Crust</option>
-                            <option>Cheese Filled Crust </option>
-                            <option>Deep Crust</option>
-                            <option>Pan Crust</option>
-                            <option>Thin Crust</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect3">Toppings</label>
-                        <select class="form-control toppings" id="toppings">
-                            <option selected></option>
-                            <option>Mushrooms, onions, peperoni</option>
-                            <option>cheese, sausage, shrimp</option>
-                            <option>spinanch, blackpeppers,blackolives</option>
-                            <option>mincedbeef, tomatosauce,red pepper</option>
-                            <option>artichoke,ricorta,crispy</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="number">Amount</label>
-                        <input type="number" class="form-control" id="num" min="1" value="1" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Write your message here.</label>
-                        <textarea class="form-control comment" placeholder="" rows="4" id="comment"></textarea>
-                    </div>
-
-                </form>
-            </div>
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <button type="button" class="btn btn-danger order" id="order"> Complete Order</button>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" class="btn btn-primary" id="chooseDeliver">Deliver</button>
-                        <button type="button" class="btn btn-danger" id="chooseReservation">Reservation</button>
-                    </div>
-                </form>
-                <div id="deliver">
-                    <h5>Enter your location:</h5>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <select class="form-control mb-2 mr-sm-2" id="area">
-                                <option selected>Choose your location...</option>
-                                <option>Kawangware</option>
-                                <option>Upperhill</option>
-                                <option>Westlands</option>
-                                <option>Donholm</option>
-                                <option>Syokimau</option>
-                                <option>Kileleshwa</option>
-                                <option>Lavington</option>
-                                <option>Runda</option>
-                                <option>Kasarani</option>
-                                <option>Ruiru</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-2 mr-sm-2" id="street"
-                                placeholder="Input Location Details...">
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-danger mb-2 mr-sm-2" 2
-                                id="submitDeliver">Submit</button>
-                        </div>
-                    </form>
                 </div>
-                <div id="reserve">
-                    <h5>Enter your name and table size:</h5>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-2 mr-sm-2" id="Name"
-                                placeholder="Enter your full Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control mb-2 mr-sm-2" id="numreserve" min="1" max="10"
-                                value="1">
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-danger mb-2 mr-sm-2" id="submitRes">Submit</button>
-                        </div>
-                    </form>
-                </div>
-                <button type="button" class="btn btn-primary" id="checkout">Checkout</button>
-                <div class="background">
-                    <div id="summary">
-                        <div class="sum">
-                            <h5>Order(s):</h5>
-                            <ol id="ordered">
-
-                            </ol>
-                        </div>
-                        <div class="sum">
-                            <h5>Price(s):</h5>
-                            <ol id="prices">
-
-                            </ol>
-                        </div>
-                    </div>
-                    <h5 class="grandprice">Your total price is: </h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="page-footer font-small blue pt-4">
-
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            PIZZA PALACE
         </div>
 
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+        <div id="delivery">
+            <h3>ADDRESS</h3>
+            <input type="text" class="form-control" name="Street" id="street" placeholder="Street"><br>
+            <input type="text" class="form-control" name="Estate" id="estate" placeholder="Estate"><br>
+            <input type="text" class="form-control" name="PhoneNumber" id="phoneNumber" placeholder="Phone Number"><br>
+        </div>
+        <button type="submit" id="submit" class="btn btn-danger" value="checkout">Checkout</button>
+        <button type="submit" id="submit" class="btn btn-primary" value="Submit">Submit</button>
+        </form>
+        <footer class="page-footer font-small blue pt-4">
+
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                PIZZA PALACE
+            </div>
+
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/updated.js"></script>
 </body>
 
 </html>
