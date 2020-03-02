@@ -1,5 +1,5 @@
 # Pizza-Palace
-This is a a simple website where by clients can order pizza according to the prefrences and the number of pizza to be delivered at their desired locaton
+This is a simple website where by clients can order pizza according to the prefrences and the number of pizza to be delivered at their desired locaton
 
 ## Getting Started
 
@@ -32,16 +32,6 @@ run code . to open your the web on visual studio code
 -After ordering the pizza click the checkout button then the complete order button.
 ```
 
-
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
