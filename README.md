@@ -5,7 +5,7 @@ This is a a simple website where by clients can order pizza according to the pre
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Pre-requisites
 
 What things you need to install the software and how to install them
 
@@ -38,21 +38,6 @@ run code . to open your the web on visual studio code
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Behaviour de
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -92,5 +77,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Brad Travsery youtube tutorials
 * Inspired by all developer communities and freeopensource software
-* 
+
 
