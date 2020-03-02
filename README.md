@@ -82,6 +82,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **MUSAU NZIOKA** - *Initial work* - [Pizza-Palace](https://github.com/musau96/Pizza-Palace)
 
 See also the list of [contributors](https://github.com/musau96/Pizza-Palace.git) who participated in this project.
+## live link (https://musau96.github.io/Pizza-Palace/.)
 
 ## License
 
