@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0body 
+    background-image: url(./images/enjoy.png);
+
+
+}
+
+.nav-item {
+  color: white;
+  font-size: medium;
+}
+
+.fa-facebook {
+  color: rgb(59, 91, 152);
+}
+
+.contact{
+  background-image: url(/images/pizza6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.contactus {
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+}

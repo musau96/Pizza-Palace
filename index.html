@@ -1,11 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza-Palace</title>
+    <!-- font awesome icons-->
+    <script src="https://kit.fontawesome.com/9a3930eed9.js" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- custom css-->
+    <link rel="stylessheet" href="styles.css">
+
 </head>
+
+
+
 <body>
-    
+    <!-- sticky navbar-->
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Pizza-Palace</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutus">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order-form.html">ORDER</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end of sticky navbar-->
+
+    <!-- list tags for carousel-->
+    <div id="pizza" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#pizza" data-slide-to="0" class="active"></li>
+            <li data-target="#pizza" data-slide-to="1"></li>
+            <li data-target="#pizza" data-slide-to="2"></li>
+            <li data-target="#pizza" data-slide-to="3"></li>
+        </ul>
+        <!-- carousel- inner class-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pizaa.jpg" alt="pizzapic" width="2200" height="600" auto>
+                <div class="carousel-caption">
+                    <h3>Yummy-bites</h3>
+                    <p>Best pizza we could get!</p>
+                </div>
+            </div>
+            <!--second image-->
+            <div class="carousel-item">
+                <img src="images/pizza3.jpg" alt="pizzapic3" width="2200" height="600" auto>
+                <div class="carousel-caption">
+                    <h3>delicious food</h3>
+                    <p> At affordable prices</p>
+                </div>
+            </div>
+            <!--third image -->
+            <div class="carousel-item">
+                <img src="images/pizza4.jpg" alt="pizzapic4" width="2200" height="600">
+                <div class="carousel-caption">
+                    <h3>Pizza-Place </h3>
+                    <p>For first delivery</p>
+                </div>
+            </div>
+            <!--fourth image on Carousel-->
+            <div class="carousel-item">
+                <img src="images/pizza5.jpg" alt="pizzapic4" width="2200" height="600">
+                <div class="carousel-caption">
+                    <h3>Best pizza in town</h3>
+                    <p>For first delivery</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#pizza" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#pizza" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+    </div>
+    <hr>
+
+    <!--ABOUT US-->
+    <div id="#aboutus" class="container-fluid aboutus">
+        <div class="row">
+            <div class="col-sm-8">
+
+                <h1> ABOUT US </h1>
+
+                <p>We do online delivey ready to serve your with the most efficient services</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <div id="#services" class="container-fluid contact">
+
+
+        <article class="service-item service-item-white">
+            <div class="front-text">
+                <i class="fa fa-cog fa-spin" style="font-size:24px"></i>
+
+                <h1>Event Orders</h1>
+                <p>Having a party, wedding or a private event order for a baufee(i donno the spelling :)</p>
+                <button type="button">Read More</button>
+            </div>
+        </article>
+
+        <br><br>
+        <article class="service-item service-item-black">
+            <div class="front-text">
+                <i class="fas fa-clipboard-check" style="font-size: 24px"></i>
+                <h1>Table booking</h1>
+            </div>
+    </div>
+
+    </div>
+    <hr>
+    <br>
+    <!--contact-->
+    <div class="contact">
+        <h2 class="contactus">Contact us</h2>
+
+    </div>
+    <br><br><br>
+    <form id="data" class="form-cont">
+        <input type="text" id="name" placeholder="Name.." size="50" required>
+        <br>
+        <input type="email" id="email" placeholder="Email.." size="50" required><br>
+        <div class="area">
+            <br>
+            <textarea name="message" id="message" rows="12" cols="90" placeholder="Your message here..."
+                required></textarea>
+        </div>
+        <div>
+            <div>
+                <p>Contact us and we'll get back to you in bit.</p>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi,Kenya</p>
+                <p><i class="fas fa-phone-square-alt"></i> +254 1515151515</p>
+                <p><i class="far fa-envelope"></i>pizza-palace@gmail.com</p>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+    </form>
+
+    </div>
+    </div>
+    </div>
+
+    <!-- footer-->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      
+    <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook.png"
+            alt="Facebook"></a>
+           
+    </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

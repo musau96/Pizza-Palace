@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pizza inn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome icons-->
+    <script src="https://kit.fontawesome.com/9a3930eed9.js" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- custom css-->
+    <link rel="stylessheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="logos">
+            <img src="images/pizza6.jpg" width="2200" height="600" >
+        </div>
+        <h1>
+            Pizza-Palace
+        </h1>
+        <div class="button2">
+            <a href="index.html"><button type="button" class="btn btn-primary" id="checkout">Home</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Pizza Size</label>
+                        <select class="form-control size" id="size">
+                            <option selected></option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Crust</label>
+                        <select class="form-control crust" id="crust">
+                            <option selected></option>
+                            <option>Stuffed Crust</option>
+                            <option>Thick Crust</option>
+                            <option>Cheese Filled Crust </option>
+                            <option>Deep Crust</option>
+                            <option>Pan Crust</option>
+                            <option>Thin Crust</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect3">Toppings</label>
+                        <select class="form-control toppings" id="toppings">
+                            <option selected></option>
+                            <option>Mushrooms, onions, peperoni</option>
+                            <option>cheese, sausage, shrimp</option>
+                            <option>spinanch, blackpeppers,blackolives</option>
+                            <option>mincedbeef, tomatosauce,red pepper</option>
+                            <option>artichoke,ricorta,crispy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Amount</label>
+                        <input type="number" class="form-control" id="num" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Write your message here.</label>
+                        <textarea class="form-control comment" placeholder="" rows="4" id="comment"></textarea>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-danger order" id="order"> Complete Order</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary" id="chooseDeliver">Deliver</button>
+                        <button type="button" class="btn btn-danger" id="chooseReservation">Reservation</button>
+                    </div>
+                </form>
+                <div id="deliver">
+                    <h5>Enter your location:</h5>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <select class="form-control mb-2 mr-sm-2" id="area">
+                                <option selected>Choose your location...</option>
+                                <option>Kawangware</option>
+                                <option>Upperhill</option>
+                                <option>Westlands</option>
+                                <option>Donholm</option>
+                                <option>Syokimau</option>
+                                <option>Kileleshwa</option>
+                                <option>Lavington</option>
+                                <option>Runda</option>
+                                <option>Kasarani</option>
+                                <option>Ruiru</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="street"
+                                placeholder="Input Location Details...">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-danger mb-2 mr-sm-2" 2
+                                id="submitDeliver">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="reserve">
+                    <h5>Enter your name and table size:</h5>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="Name"
+                                placeholder="Enter your full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control mb-2 mr-sm-2" id="numreserve" min="1" max="10"
+                                value="1">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-danger mb-2 mr-sm-2" id="submitRes">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="btn btn-primary" id="checkout">Checkout</button>
+                <div class="background">
+                    <div id="summary">
+                        <div class="sum">
+                            <h5>Order(s):</h5>
+                            <ol id="ordered">
+
+                            </ol>
+                        </div>
+                        <div class="sum">
+                            <h5>Price(s):</h5>
+                            <ol id="prices">
+
+                            </ol>
+                        </div>
+                    </div>
+                    <h5 class="grandprice">Your total price is: </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer font-small blue pt-4">
+
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            PIZZA PALACE
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
