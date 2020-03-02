@@ -19,7 +19,7 @@
 <body>
     <div class="top">
         <div class="logos">
-            <img src="images/pizza6.jpg" height="60" width="100">
+            <img src="images/pizza6.jpg" width="2200" height="600" >
         </div>
         <h1>
             Pizza-Palace
@@ -66,7 +66,7 @@
                     </div>
                     <div class="form-group">
                         <label for="number">Amount</label>
-                        <input type="number" class="form-control" id="num" min="1" value="1">
+                        <input type="number" class="form-control" id="num" min="1" value="1" required>
                     </div>
                     <div class="form-group">
                         <label for="comment">Write your message here.</label>
@@ -78,11 +78,11 @@
             <div class="col-md-6">
                 <form>
                     <div class="form-group">
-                        <button type="button" class="btn btn-primary order" id="order"> Complete Order</button>
+                        <button type="button" class="btn btn-danger order" id="order"> Complete Order</button>
                     </div>
                     <div class="form-group">
                         <button type="button" class="btn btn-primary" id="chooseDeliver">Deliver</button>
-                        <button type="button" class="btn btn-primary" id="chooseReservation">Reservation</button>
+                        <button type="button" class="btn btn-danger" id="chooseReservation">Reservation</button>
                     </div>
                 </form>
                 <div id="deliver">
@@ -108,7 +108,7 @@
                                 placeholder="Input Location Details...">
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary mb-2 mr-sm-2" 2
+                            <button type="button" class="btn btn-danger mb-2 mr-sm-2" 2
                                 id="submitDeliver">Submit</button>
                         </div>
                     </form>
@@ -125,7 +125,7 @@
                                 value="1">
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary mb-2 mr-sm-2" id="submitRes">Submit</button>
+                            <button type="button" class="btn btn-danger mb-2 mr-sm-2" id="submitRes">Submit</button>
                         </div>
                     </form>
                 </div>
