@@ -1,6 +1,9 @@
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 0body 
+    background-image: url(./images/enjoy.png);
+
+
 }
 
 .nav-item {
@@ -13,7 +16,7 @@ html, body {
 }
 
 .contact{
-  background-image: url(./images/pizza6.jpg);
+  background-image: url(/images/pizza6.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
