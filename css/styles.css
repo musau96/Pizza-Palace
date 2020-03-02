@@ -1,18 +1,30 @@
 html, body {
-    margin:0;
-    padding:0;
-
+  margin: 0;
+  padding: 0;
 }
-.nav-item{
-    color: white;
-    font-size: medium;
 
+.nav-item {
+  color: white;
+  font-size: medium;
 }
-.container-fluid .contact{
-  background-image: url(../images/pizza6.jpg);
-  background-size: 100%;
+
+.fa-facebook {
+  color: rgb(59, 91, 152);
+}
+
+.contact{
+  background-image: url(./images/pizza6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
 }
-.fa-facebook {
-    color: rgb(59, 91, 152);
-  }
+
+.contactus {
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+}
