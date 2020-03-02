@@ -6,5 +6,13 @@ html, body {
 .nav-item{
     color: white;
     font-size: medium;
-    
+
 }
+.container-fluid .contact{
+  background-image: url(../images/pizza6.jpg);
+  background-size: 100%;
+  text-align: center;
+}
+.fa-facebook {
+    color: rgb(59, 91, 152);
+  }
