@@ -11,7 +11,7 @@ What things you need to install the software and how to install them
 
 ```
 Google Chrome(https://www.google.com/chrome/) - download or your prefered browser
-VS Studio Code(https://www.google.com/chrome/)-download and install
+VS Studio Code(https://code.visualstudio.com/)-download and install
 Download extension package-live server on you visualstudio
 ```
 
